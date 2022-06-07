@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         bird.style.left = birdLeft + 'px'
     }
     let gameTimerId = setInterval(startGame, 20)
-    let score2 = setInterval(startGame,200)
+    let score2 = setInterval(startGame,1000)
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded' , () => {
         clearInterval(gameTimerId)
         bird.style.bottom = birdBottom
         bird.style.left = birdLeft
+        obstacle.style.left = obstacleLeft
+        topObstacle.style.left = obstacleLeft
         console.log('game over')
         console.log('score: ' + score)
         console.log('score2: ' + score2)
