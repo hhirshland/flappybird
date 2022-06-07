@@ -83,8 +83,6 @@ document.addEventListener('DOMContentLoaded' , () => {
         clearInterval(gameTimerId)
         bird.style.bottom = birdBottom
         bird.style.left = birdLeft
-        obstacle.style.left = obstacleLeft
-        topObstacle.style.left = obstacleLeft
         console.log('game over')
         console.log('score: ' + score)
         console.log('score2: ' + score2)
