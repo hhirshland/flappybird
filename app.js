@@ -81,8 +81,10 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     function gameOver() {
         clearInterval(gameTimerId)
+        bird.style.bottom = birdBottom
+        bird.style.left = birdLeft
         console.log('game over')
-        console.log(score)
+        console.log('score: ' + score)
         console.log('score2: ' + score2)
         isGameOver = true
         document.removeEventListener('keyup', control)
