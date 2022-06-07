@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         bird.style.left = birdLeft + 'px'
     }
     let gameTimerId = setInterval(startGame, 20)
+    let score2 = setInterval(startGame,200)
 
     function control(e) {
         if (e.keyCode === 32) {
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded' , () => {
                 birdBottom === 0 
                 ) {
                 gameOver()
-                clearInterval(timerId)
+                clearInterval(score2)
             } else (
                 score++
             )
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded' , () => {
         clearInterval(gameTimerId)
         console.log('game over')
         console.log(score)
+        console.log(score2)
         isGameOver = true
         document.removeEventListener('keyup', control)
         ground.classList.add('ground')
