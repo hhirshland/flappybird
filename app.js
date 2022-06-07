@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     let birdBottom = 100
     let gravity = 3
     let isGameOver = false
-    let gap = 430
+    let gap = 600
     var score = 0
 
 
